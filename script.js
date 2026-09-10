@@ -1,4 +1,3 @@
-```javascript
 /* =====================================================
    TRUMAN FOREVER
    INTERACTIVE FUNCTIONS
