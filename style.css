@@ -1,222 +1,294 @@
-/* GENERAL */
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<head>
 
-html {
-    scroll-behavior: smooth;
-}
+    <meta charset="UTF-8">
 
-body {
-    font-family: Arial, sans-serif;
-    background: #0d0d0d;
-    color: #f5f5f5;
-    line-height: 1.6;
-}
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Truman Forever</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
 
 
-/* NAVIGATION */
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(13, 13, 13, 0.9);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    border-bottom: 1px solid #333;
-}
-
-nav {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 30px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links a {
-    color: #f5f5f5;
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.nav-links a:hover {
-    color: #c9a227;
-}
+<body>
 
 
-/* HERO */
+<!-- ================= NAVIGATION ================= -->
 
-.hero {
-    min-height: 100vh;
+<header>
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    <nav>
 
-    text-align: center;
-    padding: 100px 20px;
+        <div class="logo">
+            TRUMAN FOREVER
+        </div>
 
-    background:
-        radial-gradient(circle at center, #252525 0%, #0d0d0d 60%);
-}
+        <div class="nav-links">
 
-.small-title {
-    color: #c9a227;
-    letter-spacing: 4px;
-    font-size: 13px;
-    margin-bottom: 20px;
-}
+            <a href="#home">Home</a>
 
-.hero h1 {
-    font-size: clamp(55px, 10vw, 120px);
-    line-height: 1;
-    letter-spacing: -3px;
-}
+            <a href="#blog">The Blog</a>
 
-.subtitle {
-    font-size: 22px;
-    margin: 25px 0 35px;
-    color: #bdbdbd;
-}
+            <a href="#poll">Poll</a>
+
+            <a href="#discussion">Discussion</a>
+
+            <a href="#about">About</a>
+
+        </div>
+
+    </nav>
+
+</header>
 
 
-/* BUTTON */
 
-.button {
-    display: inline-block;
-    padding: 14px 28px;
+<!-- ================= HERO ================= -->
 
-    background: #c9a227;
-    color: #0d0d0d;
+<main>
 
-    text-decoration: none;
-    font-weight: bold;
+<section id="home" class="hero">
 
-    transition: 0.3s;
-}
+    <div class="hero-content">
 
-.button:hover {
-    transform: translateY(-3px);
-    background: #e0bd4f;
-}
+        <p class="eyebrow">
+            THE INTERNET'S PLACE TO DISCUSS
+        </p>
 
+        <h1>
+            TRUMAN<br>
+            FOREVER
+        </h1>
 
-/* BLOG */
+        <p class="hero-subtitle">
+            Reality. Surveillance. Freedom.
+        </p>
 
-.blog {
-    max-width: 850px;
-    margin: auto;
-    padding: 130px 25px;
-}
+        <a href="#blog" class="main-button">
+            ENTER THE SHOW
+        </a>
 
-.section-label {
-    color: #c9a227;
-    font-size: 13px;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-}
+    </div>
 
-.blog h2 {
-    font-size: clamp(35px, 6vw, 65px);
-    line-height: 1.1;
-    margin-bottom: 25px;
-}
-
-.author {
-    color: #888;
-    margin-bottom: 50px;
-}
-
-.blog-text {
-    font-size: 18px;
-    color: #d0d0d0;
-}
-
-.blog-text p {
-    margin-bottom: 25px;
-}
+</section>
 
 
-/* DISCUSSION */
 
-.discussion {
-    max-width: 850px;
-    margin: auto;
-    padding: 100px 25px;
-    border-top: 1px solid #333;
-}
+<!-- ================= BLOG ================= -->
 
-.discussion h2 {
-    font-size: 45px;
-    margin-bottom: 20px;
-}
+<section id="blog" class="blog-section">
 
+    <div class="article-header">
 
-/* ABOUT */
+        <p class="section-label">
+            FEATURED ARTICLE
+        </p>
 
-.about {
-    padding: 100px 25px;
-    text-align: center;
-    border-top: 1px solid #333;
-}
+        <h2>
+            Truman walked out.<br>
+            Would you have done the same?
+        </h2>
 
-.about h2 {
-    font-size: 45px;
-    margin-bottom: 20px;
-}
+        <p class="article-meta">
+            By Kalita · September 10, 2026
+        </p>
+
+    </div>
 
 
-/* FOOTER */
+    <article class="article">
 
-footer {
-    text-align: center;
-    padding: 40px;
-    color: #666;
-    border-top: 1px solid #333;
-}
+        <!--
+        REPLACE THE TEXT BELOW
+        WITH YOUR ACTUAL BLOG ENTRY
+        -->
+
+        <p>
+            For thirty years, Truman Burbank lived what appeared
+            to be an ordinary life. He had a home, a job, a wife,
+            friends and a peaceful community.
+        </p>
+
+        <p>
+            There was just one problem: none of it was real.
+        </p>
+
+        <p>
+            Truman eventually discovered that his entire life
+            had been turned into a television show without his
+            knowledge or consent.
+        </p>
+
+        <blockquote>
+            "Was Truman really free?"
+        </blockquote>
+
+        <p>
+            His decision to leave Seahaven therefore becomes
+            much more than simply walking through a door.
+            It represents his decision to choose an uncertain
+            reality over a comfortable illusion.
+        </p>
+
+        <p>
+            But what would you have done?
+        </p>
+
+    </article>
 
 
-/* MOBILE */
+    <div class="article-divider"></div>
 
-@media (max-width: 700px) {
+</section>
 
-    nav {
-        flex-direction: column;
-        gap: 15px;
-    }
 
-    .nav-links {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
-    .hero h1 {
-        font-size: 60px;
-    }
+<!-- ================= POLL ================= -->
 
-    .blog h2 {
-        font-size: 40px;
-    }
-}
+<section id="poll" class="poll-section">
+
+    <p class="section-label">
+        YOUR TURN
+    </p>
+
+    <h2>
+        Would you have left Seahaven?
+    </h2>
+
+    <p class="poll-description">
+        Truman had everything he thought he wanted.
+        Would you still choose the unknown?
+    </p>
+
+
+    <div class="poll-options">
+
+        <button class="poll-button"
+                onclick="vote('yes')">
+
+            YES — I WOULD LEAVE
+
+        </button>
+
+
+        <button class="poll-button"
+                onclick="vote('no')">
+
+            NO — I WOULD STAY
+
+        </button>
+
+    </div>
+
+
+    <div id="poll-result" class="poll-result">
+
+        Vote to see the results.
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= DISCUSSION ================= -->
+
+<section id="discussion" class="discussion-section">
+
+    <p class="section-label">
+        THE DISCUSSION
+    </p>
+
+    <h2>
+        What do you think?
+    </h2>
+
+    <p class="discussion-intro">
+        Share your thoughts about Truman's decision,
+        reality TV and the price of entertainment.
+    </p>
+
+
+    <!--
+    COMMENT SYSTEM WILL BE ADDED HERE
+    -->
+
+    <div id="comments">
+
+        <div class="comment-placeholder">
+
+            <p>
+                💬 Comments are coming soon.
+            </p>
+
+            <p>
+                The discussion will open here.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about-section">
+
+    <p class="section-label">
+        ABOUT THE PROJECT
+    </p>
+
+    <h2>
+        Truman Forever
+    </h2>
+
+    <p>
+        Truman Forever is an interactive platform created
+        for an English class discussion about
+        <em>The Truman Show</em>.
+    </p>
+
+    <p>
+        The website explores reality television, surveillance,
+        privacy, freedom and the relationship between
+        entertainment and real life.
+    </p>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        TRUMAN FOREVER
+    </p>
+
+    <p>
+        Reality is only what you believe it is.
+    </p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+```
